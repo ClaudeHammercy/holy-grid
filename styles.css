@@ -1,0 +1,37 @@
+#Header {
+    grid-area: Header;
+    background-color: red;
+}
+
+#Nav {
+    grid-area: Nav;
+    background-color: orange;
+}
+#Article1 {
+    grid-area: Article1;
+    background-color: yellow;
+}
+#Article2 {
+    grid-area: Article2;
+    background-color: green;
+}
+#AdArea {
+    grid-area: AdArea;
+    background-color: blue;
+}
+#Footer {
+    grid-area: Footer;
+    background-color: rgb(80, 1, 80);
+}
+#Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "Header Header Header Header Header Header Header"
+        "Nav Article1 Article1 Article1 Article1 AdArea AdArea"
+        "Nav Article1 Article1 Article1 Article1 AdArea AdArea"
+        "Nav Article2 Article2 Article2 Article2 AdArea AdArea"
+        "Nav Article2 Article2 Article2 Article2 AdArea AdArea"
+        "Footer Footer Footer Footer Footer Footer Footer";
+}
